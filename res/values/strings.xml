@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HelloWorld</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro">Press enter to search the top 10 trends on Twitter</string>
+    <string name="hint">Search term</string>
+    <string name="search_label">Search</string>
+    <string name="placeholder">---</string>
+    
+</resources>

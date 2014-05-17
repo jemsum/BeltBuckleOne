@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uk.co.jemsum.helloworld.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/intro_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/intro" />
+
+<!--     <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intro_txt"
+        android:layout_below="@+id/intro_txt"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="text" />  -->
+    
+    <Button
+        android:id="@+id/src_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/intro_txt"
+        android:layout_below="@+id/intro_txt"
+        android:text="@string/search_label"
+        android:onClick="searchTwitter" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/src_button"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" >
+        
+        <TextView
+		    android:id="@+id/tweet_txt"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="top|center"
+		    android:padding="10dp"
+		    android:background="#330000"
+		    android:textColor="#ffffff"
+		    android:layout_margin="5dp"
+		    android:text="@string/placeholder"
+		    android:freezesText="true"
+		/>
+    </ScrollView>
+
+</RelativeLayout>
